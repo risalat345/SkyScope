@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+/* Define the animation for sliding in each ltter from the right */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to each letter */
+.animated-letter {
+  display: inline-block; /* Ensure letters are treated individually */
+  animation: slideInFromRight 1s ease-out forwards;
+  opacity: 0; /* Start with invisible letters */
+}
+
+.animated-sky{
+  background: linear-gradient(90deg, #38bdf8, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimationSky 3s infinite;
+}
+.animated-scope {
+  background: linear-gradient(90deg, #ffffff, #d1d5db, #f3f4f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimationScope 3s infinite;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
