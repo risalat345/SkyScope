@@ -152,6 +152,7 @@ const search = async (city) => {
             </div>
           </div>
         </div>
+        <footer className='bg-black w-full text-sky-300 text-center'>Made By Ashraf Uddin</footer>
    </div>
   )
 }
